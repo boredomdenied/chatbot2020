@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>A</pattern>
+    <template>Are you more interested in Software or Hardware?<br></br>
+    </template>
+    </category>
+    <category>
+        <pattern>Hardware</pattern>
+        <template>You should be a Computer Hardware Engineer</template>
+    </category>
+    <category>
+        <pattern>Software</pattern>
+        <template>You should become a Software Engineer</template>
+    </category>
+
+</aiml>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+  <category>
+    <pattern>D</pattern>
+    <template>You should become a Computer Science Professor<br></br>
+    </template>
+    </category>
+</aiml>

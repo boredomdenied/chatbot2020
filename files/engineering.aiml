@@ -14,4 +14,20 @@
         <template>You should become a Software Engineer</template>
     </category>
 
+<category>
+	<pattern>SOFT</pattern>
+        <template>You should become a Software Engineer</template>
+</category>
+<category>
+	<pattern>HARD</pattern>
+        <template>You should be a Computer Hardware Engineer</template>
+</category>
+<category>
+	<pattern>S</pattern>
+        <template>You should become a Software Engineer</template>
+</category>
+<category>
+	<pattern>H</pattern>
+        <template>You should be a Computer Hardware Engineer</template>
+</category>
 </aiml>

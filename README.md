@@ -68,7 +68,7 @@ Something else to consider is you do't control the service and the hardware it r
 A good alternative would be to use your own interpreter. I found program-y which is an open source project with a python interpreter. I plan on using this for further AIML projects
 
 J: PANOPTO RECORDING
-link:
+link: https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f9947c07-f6e8-4125-a257-ab670172d727
 
 K: Sources
 https://www.glassdoor.com/blog/12-great-jobs-for-computer-science-majors/

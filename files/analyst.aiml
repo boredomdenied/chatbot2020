@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+    <pattern>ANALYSIS</pattern>
+    <template>Are you interested in security analysis?  
+        <reply><text>Yes</text><postback>INFOSEC</postback></reply>
+        <reply><text>No</text><postback>SYSTEM</postback></reply>
+    </template>
+    </category>
+    	<category>
+        <pattern>INFOSEC</pattern>
+        <template>It sounds like you'd do great as an information security analyst!
+        <delay>2</delay> Care to find out more?
+            <reply><text>Yes</text><postback>ISA</postback></reply>
+            <reply><text>No</text><postback>QUIT</postback></reply>
+        </template>
+        </category>
+    <category>
+        <pattern>ISA</pattern>
+        <template>Information security analysts work to secure information networks
+        and systems in many different types of organizations.
+            <delay>2</delay>
+            <link>
+                <text>Find out the details on info security analysts</text>
+                <url>https://www.computerscience.org/careers/information-security-analyst/</url>
+            </link>
+            <button><text>List all paths</text><postback>CS PATHS</postback></button>
+            <button><text>Choose your own path</text><postback>CHOOSE PATH</postback></button>
+            <button><text>Quit</text><postback>QUIT</postback></button>
+        </template>
+    </category>
+    	<category>
+        <pattern>SYSTEM</pattern>
+        <template>That sounds like you'd do well as a system analyst!
+        <delay>2</delay> Care to find out more?
+            <reply><text>Yes</text><postback>SA</postback></reply>
+            <reply><text>No</text><postback>QUIT</postback></reply>
+        </template>
+    </category>
+    <category>
+        <pattern>SA</pattern>
+        <template>Systems analysts work to optimize user experience with programs
+            <delay>2</delay>
+            <link>
+                <text>Find out the details on system analysts here</text>
+                <url>https://www.itcareerfinder.com/it-careers/mobile-application-developer.html</url>
+            </link>
+            <button><text>List all paths</text><postback>CS PATHS</postback></button>
+            <button><text>Choose your own path</text><postback>CHOOSE PATH</postback></button>
+            <button><text>Quit</text><postback>QUIT</postback></button>
+        </template>
+    </category>
+    </aiml>

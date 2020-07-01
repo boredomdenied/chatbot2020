@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+    <pattern>PROGRAMMING</pattern>
+    <template>Would you like to program for web development?  
+        <reply><text>Yes</text><postback>WEBDEV</postback></reply>
+        <reply><text>No</text><postback>MOBILE</postback></reply>
+    </template>
+    </category>
+    	<category>
+        <pattern>WEBDEV</pattern>
+        <template>It sounds like you'd do great as a web developer!
+        <delay>2</delay> Care to find out more?
+            <reply><text>Yes</text><postback>WEB</postback></reply>
+            <reply><text>No</text><postback>QUIT</postback></reply>
+        </template>
+        </category>
+        <category>
+        <pattern>WEB</pattern>
+        <template>Web developers use HTML, Javascript, and CSS to create rich, interactive content
+            <delay>2</delay>
+            <link>
+                <text>Find out the details on Web Developers</text>
+                <url>https://skillcrush.com/blog/how-to-start-a-web-developer-career/</url>
+            </link>
+            <button><text>List all paths</text><postback>CS PATHS</postback></button>
+            <button><text>Choose your own path</text><postback>CHOOSE PATH</postback></button>
+            <button><text>Quit</text><postback>QUIT</postback></button>
+        </template>
+    </category>
+    	<category>
+        <pattern>MOBILE</pattern>
+        <template>That sounds like you'd do well as a mobile app developer!
+        <delay>2</delay> Care to find out more?
+            <reply><text>Yes</text><postback>MAD</postback></reply>
+            <reply><text>No</text><postback>QUIT</postback></reply>
+        </template>
+    </category>
+    <category>
+        <pattern>MAD</pattern>
+        <template>Mobile app developers use native UI elements and the underlying low-level API
+        to create fast and secure apps
+            <delay>2</delay>
+            <link>
+                <text>Find out the details on mobile app development</text>
+                <url>https://www.itcareerfinder.com/it-careers/mobile-application-developer.html</url>
+            </link>
+            <button><text>List all paths</text><postback>CS PATHS</postback></button>
+            <button><text>Choose your own path</text><postback>CHOOSE PATH</postback></button>
+            <button><text>Quit</text><postback>QUIT</postback></button>
+        </template>
+    </category>
+    </aiml>

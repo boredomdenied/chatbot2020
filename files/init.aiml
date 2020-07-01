@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>*</pattern>
+        <template>Hello and welcome to career bot!<delay>2</delay>
+        Please say "begin" so we can get started</template>
+    </category>
+    <category>
+        <pattern>QUIT</pattern>
+        <template> Thank you for your time. If you would like to begin chatting
+        please type "begin".
+        </template>
+    </category>
+    <category>
+        <pattern>HI ^</pattern>
+        <template> Hi there, are you ready to get started?
+            <reply><text>Sure</text><postback>BEGIN</postback></reply>
+            <reply><text>Not yet</text><postback>QUIT</postback></reply>
+        </template>
+    </category>
+    <category>
+        <pattern>HELLO ^</pattern>
+        <template><srai>Hi ^</srai></template>
+    </category>
+    <category>
+        <pattern>BEGIN</pattern>
+        <template>I see you're having trouble figuring out what to do after you graduate.
+        <delay>2</delay>Would you rather...
+            <button>
+                <text>Explore a career path</text><postback>CHOOSE PATH</postback>
+            </button>    
+            <button>
+                <text>Check out the full list of paths for a CS grad</text><postback>CS PATHS</postback>
+            </button>
+        </template>
+    </category>
+     <category>
+        <pattern>CHOOSE PATH</pattern>
+        <template>Please answer the following
+        <delay>2</delay>
+        Which of these options are you most interested in?
+            <button>
+                <text>Analysis</text><postback>ANALYSIS</postback>
+            </button>
+            <button>
+                <text>Data</text><postback>DBA</postback>
+            </button>            
+            <button>
+                <text>Programming</text><postback>PROGRAMMING</postback>
+            </button>
+        </template>
+    </category>
+   <category>
+        <pattern>CS PATHS</pattern>
+        <template>The following are career paths for CS graduates
+            <button>
+                <text>Mobile App Developer</text><postback>MAD</postback>
+            </button>
+            <button>
+                <text>System Analyst</text><postback>SA</postback>
+            </button>
+            <button>
+                <text>Information Security Analyst</text><postback>ISA</postback>
+            </button>
+            <button>
+                <text>Database Admin</text><postback>DATA</postback>
+            </button>
+            <button>
+                <text>Web Developer</text><postback>WEB</postback>
+            </button>
+        </template>
+    </category>
+</aiml>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>DBA</pattern>
+        <template>Looks like you'd do well as a database admin
+        <delay>2</delay> Care to find out more?
+            <reply><text>Yes</text><postback>DATA</postback></reply>
+            <reply><text>No</text><postback>QUIT</postback></reply>
+        </template>
+        </category>
+     <category>
+        <pattern>DATA</pattern>
+        <template>Database admins use software from companies like Oracle, Microsoft and Mongodb
+        <delay>2</delay> Care to find out more?
+            <link>
+                <text>Find out the details on DBA's</text>
+                <url>https://www.computerscience.org/careers/database-administrator/</url>
+            </link>
+            <button><text>List all paths</text><postback>CS PATHS</postback></button>
+            <button><text>Choose your own path</text><postback>CHOOSE PATH</postback></button>
+            <button><text>Quit</text><postback>QUIT</postback></button>
+        </template>
+    </category>
+</aiml>
